@@ -9,6 +9,7 @@ entity SystemE is
     
 architecture SystemE_arch of SystemE is
    signal ABC: bit_vector(2 downto 0);
+  ABC <= A & B & C;
    begin 
         with ABC select
             F<='1' when "001",
