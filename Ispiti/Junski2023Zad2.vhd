@@ -17,7 +17,7 @@ architecture Automat_arch of Automat is
     
     begin 
     	memorija: process(clk,rst) begin
-        if(clk='0') then trenutno<=Stanje0;
+        if(rst='0') then trenutno<=Stanje0;
         elsif(rising_edge(clk)) then trutno<=sledece;
         end if;
         end process;
